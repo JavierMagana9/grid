@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+.contenedor-padre {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#gheader {
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-column: 1/-1; 
+    border: 1px solid black;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#gmain {
+    padding: 20px;
+    display: grid;
+    grid-column: 1/-1;
+    border: 1px solid black;
+}
+h1 {
+    font-size: 1.6rem;
+}
+
+#gaside {
+    padding: 20px;
+    margin: 20px 0;
+    display: grid;
+    grid-column: 1/-1;
+    border: 1px solid black;
+}
+
+#widget1 {
+    padding: 20px;
+    margin-right: 10px;
+    display: grid;
+    grid-column: 1/2;
+    border: 1px solid black;
+}
+
+#widget2 {
+    padding: 20px;
+    margin-left: 10px;
+    display: grid;
+    grid-column: 2/3;
+    border: 1px solid black;
+}
+
+#gfooter {
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-column: 1/-1;
+    border: 1px solid black;
+}
+
+article div {
+    display: flex;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#contenedor-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contenedor-img > div{
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+    width: 100%;
+    
+    
+}
+
+/*//////////////////////////////////////////////
+                    768
+//////////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+    .contenedor-padre {
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #gheader {
+        grid-column: 1/-1;
+    }
+    
+    #gmain {
+        grid-column: 1/3;
+    }
+    
+    #gaside {
+        grid-column: 3/4;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-row: 2/4;
+
+    }
+    
+    #widget1 {
+        grid-column: 1/2;
+        margin-top: 20px;
+    }
+    
+    #widget2 {
+        grid-column: 2/3;
+        margin-top: 20px;
+    }
+    
+    #gfooter {
+        grid-column: 1/-1;
+    }
+    #contenedor-img {
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #contenedor-img > div{
+        padding: 20px;
+        border: 1px solid black;
+        margin: 2vw;
+        width: 32%
+        
+    }
+    
+}
+/*//////////////////////////////////////////////
+                    768
+//////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////
+                    992
+//////////////////////////////////////////////*/
+
+@media screen and (min-width: 992px) {
+    .contenedor-padre {
+        margin: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #gheader {
+        grid-column: 1/-1;
+    }
+    
+    #gmain {
+        grid-column: 2/4;
+    }
+    
+    #gaside {
+        grid-column: 1/2;
+        margin-left: 0;
+       margin-right: 20px;
+        grid-row: 2/4;
+    }
+    
+    #widget1 {
+        grid-column: 2/3;
+        margin-top: 20px;
+    }
+    
+    #widget2 {
+        grid-column: 3/4;
+        margin-top: 20px;
+    }
+    
+    #gfooter {
+        grid-column: 1/-1;
+    }
+    #contenedor-img {
+        margin: 20px 0;
+    }
+
+    #contenedor-img > div{
+        padding: 20px;
+        margin: 10px 0;
+        width: 24%;
+        
+    }
+}
+/*//////////////////////////////////////////////
+                    992
+//////////////////////////////////////////////*/
+
